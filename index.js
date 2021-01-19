@@ -136,7 +136,7 @@ inquirer.prompt([
 }) => {
 const template = `# ${title}
 ## Table of Contents
--[Title](#title)
+- [Title](#title)
 - [Summary](#summary)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -144,7 +144,7 @@ const template = `# ${title}
 - [Contributors](#contributors)
 - [Licence](#licence)
 - [Contact](#contact)
-#title
+# title
 ${title}
 #### Summary 
 ${summary}

@@ -1,6 +1,6 @@
 # readme
 ## Table of Contents
--[Title](#title)
+- [Title](#title)
 - [Summary](#summary)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -8,22 +8,22 @@
 - [Contributors](#contributors)
 - [Licence](#licence)
 - [Contact](#contact)
-#title
+# title
 readme
 #### Summary 
-siple app to generate readme on the basis of some preset questions and user answers.
+This is an simple app to generate an simple but professional **readme** file on the basis of preset standard questions and answer response.
 ### Installation 
-install node and then dependent packages.
+first install node, npm packages and all dependent files.
 ### How to use your application 
-run in external terminal and answers the asked questions.
+run index.js file in external terminal or command line and answer the asked questions.
 ### How to contribute to this project?
-right now no contributions.
+For right now I am also learning, give me sometime to play with it I will put a link for how you can contribute this project.
 ### Contributors 
-No. Not any for right now.
+No this is a solo project.
 ### Licence 
-the GPL licence
+the GNU licence
 ### Acknowledge 
-Thanks for everyone espicially Sheela Ghimire.
+Thanks for everyone for helping me out in all situations.
 ### Contact
 ### github 
 https://github.com/ghimirear
