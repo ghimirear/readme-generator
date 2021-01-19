@@ -78,8 +78,8 @@ inquirer.prompt([
       type: 'list',
       //providing list to  select any one of them.
       message : 'what licence did you use?',
-      name : 'licence',
-      choices: ['the MIT licence', 'the GPL licence', 'the apache licence', 'the GNU licence','N/A'],
+      name : 'license',
+      choices: ['MIT', 'GPL', 'APACHE', 'GNU', 'BSD', 'N/A'],
       validate: (value) => { if (value){
           return true 
       }
@@ -128,7 +128,7 @@ inquirer.prompt([
     usage, 
     contribute,
     contributors,
-    licence,
+    license,
     acknowledge,
     git,
     email
@@ -145,8 +145,12 @@ const template = `# ${title}
 - [Licence](#licence)
 - [Contact](#contact)
 # title
-${title}
-#### Summary 
+# ${title}
+### Licence 
+${license}
+https://img.shields.io/badge/<LICENSE>-<${license}>-<blue>
+<a href="https://github.com/ghimirear/readme-generator"><img alt="GitHub license" src="https://img.shields.io/github/license/ghimirear/readme-generator"></a>
+### Summary 
 ${summary}
 ### Installation 
 ${installation}
@@ -156,8 +160,7 @@ ${usage}
 ${contribute}
 ### Contributors 
 ${contributors}
-### Licence 
-${licence}
+
 ### Acknowledge 
 ${acknowledge}
 ### Contact
