@@ -135,6 +135,15 @@ inquirer.prompt([
 
 }) => {
 const template = `# ${title}
+## Table of Contents
+-[Title](#title)
+- [Summary](#summary)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contribute](#contribute)
+- [Contributors](#contributors)
+- [Licence](#licence)
+- [Contact](#contact)
 #### Summary 
 ${summary}
 ### Installation 
@@ -151,7 +160,7 @@ ${licence}
 ${acknowledge}
 ### Contact
 ### github 
-github.com/${git}
+https://github.com/${git}
 ### e-mail
 ${email}
 `;
