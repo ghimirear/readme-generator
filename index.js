@@ -151,7 +151,7 @@ ${licence}
 ${acknowledge}
 ### Contact
 ### github 
-github.con/${git}
+github.com/${git}
 ### e-mail
 ${email}
 `;
