@@ -137,22 +137,22 @@ inquirer.prompt([
 const template = `# ${title}
 #### Summary 
 ${summary}
-## Installation 
+### Installation 
 ${installation}
-## How to use your application 
+### How to use your application 
 ${usage}
-## How to contribute to this project?
+### How to contribute to this project?
 ${contribute}
-## Contributors 
+### Contributors 
 ${contributors}
-## Licence 
+### Licence 
 ${licence}
-## Acknowledge 
+### Acknowledge 
 ${acknowledge}
-## Contact
-## github 
-${git}
-## e-mail
+### Contact
+### github 
+github.con/${git}
+### e-mail
 ${email}
 `;
 createNewFile(title, template);
