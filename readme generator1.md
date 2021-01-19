@@ -1,6 +1,6 @@
 # readme generator1
 ## Table of Contents
--[Title](#title)
+- [Title](#title)
 - [Summary](#summary)
 - [Installation](#installation)
 - [Usage](#usage)

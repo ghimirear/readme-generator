@@ -144,6 +144,8 @@ const template = `# ${title}
 - [Contributors](#contributors)
 - [Licence](#licence)
 - [Contact](#contact)
+#title
+${title}
 #### Summary 
 ${summary}
 ### Installation 
