@@ -79,7 +79,7 @@ inquirer.prompt([
       //providing list to  select any one of them.
       message : 'what licence did you use?',
       name : 'license',
-      choices: ['MIT', 'GPL v3', 'Apche 2.0', 'GNU', 'BSD 3-Clause','Boost 1.0', 'EPL 1.0','IPL 1.0', 'MPL 2.0', 'N/A'],
+      choices: ['MIT', 'GPL_v3', 'Apche_2.0', 'GNU', 'BSD_3-Clause','Boost_1.0', 'EPL_1.0','IPL_1.0', 'MPL_2.0', 'N/A'],
       validate: (value) => { if (value){
           return true 
       }

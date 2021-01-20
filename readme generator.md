@@ -1,4 +1,4 @@
-# readme generator
+# README Generator
 ## Table of Contents
 - [Title](#title)
 - [Summary](#summary)
@@ -9,21 +9,21 @@
 - [Licence](#licence)
 - [Contact](#contact)
 # title
-# readme generator
+# README Generator
 ### Licence 
-Apche 2.0
-https://img.shields.io/badge/<LICENSE>-<Apche 2.0>-<BLUE>
+BSD_3-Clause
+[![License: ISC](https://img.shields.io/badge/License-BSD_3-Clause-blue.svg)](https://opensource.org/licenses/ISC)
 
 ### Summary 
-this is an siple app to generate a professional readme markdown file on the basis of standard pre sets of questions and respective answers of those questions.
+This is a simple app that asks you some sets of standard questions, on the basis of those questions answers it will generate an standard **README** file in a seconds.
 ### Installation 
-install node and npm package and run in terminal.
+This is simple like an installing NPM packages.
 ### How to use your application 
-run in external terminal.
+install and run in external terminal
 ### How to contribute to this project?
-right now no idea for taht.
+For now I have no idea.
 ### Contributors 
-no this is a solo project.
+No this is a solo project.
 
 ### Acknowledge 
 thank you everyone.
