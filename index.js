@@ -148,7 +148,7 @@ const template = `# ${title}
 # ${title}
 ### Licence 
 ${license}
-https://img.shields.io/static/v1?label=<LICENSE>&${license}=<MESSAGE>&color=<blue>
+[![License: ISC](https://img.shields.io/badge/License-${license}-blue.svg)](https://opensource.org/licenses/ISC)
 
 ### Summary 
 ${summary}
