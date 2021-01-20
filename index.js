@@ -79,7 +79,7 @@ inquirer.prompt([
       //providing list to  select any one of them.
       message : 'what licence did you use?',
       name : 'license',
-      choices: ['MIT', 'GPL', 'APACHE', 'GNU', 'BSD', 'N/A'],
+      choices: ['MIT', 'GPL v3', 'Apche 2.0', 'GNU', 'BSD 3-Clause','Boost 1.0', 'EPL 1.0','IPL 1.0', 'MPL 2.0', 'N/A'],
       validate: (value) => { if (value){
           return true 
       }
@@ -148,8 +148,8 @@ const template = `# ${title}
 # ${title}
 ### Licence 
 ${license}
-https://img.shields.io/badge/<LICENSE>-<${license}>-<blue>
-<a href="https://github.com/ghimirear/readme-generator"><img alt="GitHub license" src="https://img.shields.io/github/license/ghimirear/readme-generator"></a>
+https://img.shields.io/badge/<LICENSE>-<${license}>-<BLUE>
+
 ### Summary 
 ${summary}
 ### Installation 

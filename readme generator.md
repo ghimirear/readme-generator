@@ -1,4 +1,4 @@
-# READMEGEn
+# readme generator
 ## Table of Contents
 - [Title](#title)
 - [Summary](#summary)
@@ -9,24 +9,24 @@
 - [Licence](#licence)
 - [Contact](#contact)
 # title
-# READMEGEn
+# readme generator
 ### Licence 
-GPL
-https://img.shields.io/badge/<LICENSE>-<GPL>-<blue>
-<a href="https://github.com/ghimirear/readme-generator"><img alt="GitHub license" src="https://img.shields.io/github/license/ghimirear/readme-generator"></a>
+Apche 2.0
+https://img.shields.io/badge/<LICENSE>-<Apche 2.0>-<BLUE>
+
 ### Summary 
-this is a simple program
+this is an siple app to generate a professional readme markdown file on the basis of standard pre sets of questions and respective answers of those questions.
 ### Installation 
-testing right now.
+install node and npm package and run in terminal.
 ### How to use your application 
-install npm and use it.
+run in external terminal.
 ### How to contribute to this project?
-you can't coz I can't right now lol.
+right now no idea for taht.
 ### Contributors 
-nope. This is a solo project.
+no this is a solo project.
 
 ### Acknowledge 
-thanks to everyone
+thank you everyone.
 ### Contact
 ### github 
 https://github.com/ghimirear
