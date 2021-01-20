@@ -148,7 +148,7 @@ const template = `# ${title}
 # ${title}
 ### Licence 
 ${license}
-https://img.shields.io/badge/<LICENSE>-<${license}>-<BLUE>
+https://img.shields.io/static/v1?label=<LICENSE>&${license}=<MESSAGE>&color=<blue>
 
 ### Summary 
 ${summary}
