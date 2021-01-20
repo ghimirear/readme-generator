@@ -79,7 +79,7 @@ inquirer.prompt([
       //providing list to  select any one of them.
       message : 'what licence did you use?',
       name : 'license',
-      choices: ['MIT', 'GPL', 'Apche', 'GNU', 'BSD','Boost', 'EPL','IPL', 'MPL', 'N/A'],
+      choices: ['MIT', 'GPL v3', 'Apche 2.0', 'GNU', 'BSD 3-Clause','Boost 1.0', 'EPL 1.0','IPL 1.0', 'MPL 2.0', 'N/A'],
       validate: (value) => { if (value){
           return true 
       }
@@ -134,6 +134,7 @@ inquirer.prompt([
     email
 
 }) => {
+const licenseSplit = license.split('').join('')
 const template = `# ${title}
 ## Table of Contents
 - [Title](#title)
@@ -147,8 +148,9 @@ const template = `# ${title}
 # title
 # ${title}
 ### Licence 
+
 ${license}
-[![License: ISC](https://img.shields.io/badge/License-${license}-blue.svg)](https://opensource.org/licenses/ISC)
+[![License: ISC ](https://img.shields.io/badge/License-${licenseSplit}-blue.svg)](https://opensource.org/licenses/ISC)
 
 ### Summary 
 ${summary}
@@ -172,6 +174,7 @@ ${email}
 createNewFile(title, template);
 });
 function createNewFile(fileName, data){
+    
     fs.writeFile(`./${fileName.toLowerCase().split('').join('')}.md`, data, (error) =>{
         if(error){
             console.log(error)
