@@ -13,7 +13,7 @@
 ### Licence 
 
 BSD 3-Clause
-[![License: ISC ](https://img.shields.io/badge/License-BSD-3-Clause-blue.svg)](https://opensource.org/licenses/ISC)
+[![License: ISC ](https://img.shields.io/badge/License-BSD%203-Clause-blue.svg)](https://opensource.org/licenses/ISC)
 
 ### Summary 
 this ia a lazyass project
