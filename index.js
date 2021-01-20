@@ -1,9 +1,12 @@
 // TODO: Include packages needed for this application
 const fs = require('fs');
 const inquirer = require('inquirer');
+const util = require('util');
+const writeFileAsync= util.promisify(fs.writeFile);
 
 // TODO: Create an array of questions for user input
-inquirer.prompt([
+function promptUser(){
+ return inquirer.prompt([
     {
         //asking user to input different data to construct a readme
         type:'input',
@@ -65,7 +68,7 @@ inquirer.prompt([
     },
     {
       type: 'input',
-      message : 'any contributors to your project?',
+      message : 'any contributors to your project? please provide github username of contributor',
       name : 'contributors',
       validate: (value) => { if (value){
           return true 
@@ -89,6 +92,7 @@ inquirer.prompt([
         '[![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)](https://opensource.org/licenses/EPL-1.0)',
         '[![License: IPL 1.0](https://img.shields.io/badge/License-IPL%201.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)',
         '[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)',
+        '[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)',
         'N/A'
     ],
       validate: (value) => { if (value){
@@ -132,62 +136,111 @@ inquirer.prompt([
     }}  
     },
 
-]).then(({
-    title, 
-    summary, 
-    installation,
-    usage, 
-    contribute,
-    contributors,
-    license,
-    acknowledge,
-    git,
-    email
+])}
+function generateMarkdown(response){
+    return`
+    # ${response.title}
+    ## Table of Contents
+    - [Title](#title)
+    - [Summary](#summary)
+    - [Installation](#installation)
+    - [Usage](#usage)
+    - [Contribute](#contribute)
+    - [Contributors](#contributors)
+    - [Licence](#licence)
+    - [Contact](#contact)
+    # Title
+    # ${response.title}
+    ### Licence 
+    ${response.license}
+    ### Summary 
+    ${response.summary}
+    ### Installation 
+    ${response.installation}
+    ### How to use your application 
+    ${response.usage}
+    ### How to contribute to this project?
+    ${response.contribute}
+    ### Contributors 
+    https://github.com/${response.contributors}
 
-}) => {
+    ### Acknowledge 
+    ${response.acknowledge}
+    # Contact
+    ### Questions 
+    If you have any questions reachout on https://github.com/${response.git}
+    ### E-mail
+    For more information bout this project e-main me on ${response.email}`
+};
+async function init(){
+    try {
+        const response = await promptUser();
+        const readMe = generateMarkdown(response);
+        await writeFileAsync('README.md', readMe);
+        console.log(' Congrats your README is generated..');
+    } catch(err){
+        console.log(err);
+    }
 
-const template = `# ${title}
-## Table of Contents
-- [Title](#title)
-- [Summary](#summary)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contribute](#contribute)
-- [Contributors](#contributors)
-- [Licence](#licence)
-- [Contact](#contact)
-# title
-# ${title}
-### Licence 
-${license}
-### Summary 
-${summary}
-### Installation 
-${installation}
-### How to use your application 
-${usage}
-### How to contribute to this project?
-${contribute}
-### Contributors 
-${contributors}
-
-### Acknowledge 
-${acknowledge}
-# Contact
-### github 
-https://github.com/${git}
-### e-mail
-${email}
-`;
-createNewFile(title, template);
-});
-function createNewFile(fileName, data){
-    
-    fs.writeFile(`./${fileName.toLowerCase().split('').join('')}.md`, data, (error) =>{
-        if(error){
-            console.log(error)
-        }
-        console.log(" Congrats your README is generated")
-    })
 }
+init();
+
+// .then(({
+//     title, 
+//     summary, 
+//     installation,
+//     usage, 
+//     contribute,
+//     contributors,
+//     license,
+//     acknowledge,
+//     git,
+//     email
+
+// }) => {
+
+// const template = `# ${title}
+// ## Table of Contents
+// - [Title](#title)
+// - [Summary](#summary)
+// - [Installation](#installation)
+// - [Usage](#usage)
+// - [Contribute](#contribute)
+// - [Contributors](#contributors)
+// - [Licence](#licence)
+// - [Contact](#contact)
+// # title
+// # ${title}
+// ### Licence 
+// ${license}
+// ### Summary 
+// ${summary}
+// ### Installation 
+// ${installation}
+// ### How to use your application 
+// ${usage}
+// ### How to contribute to this project?
+// ${contribute}
+// ### Contributors 
+// ${contributors}
+
+// ### Acknowledge 
+// ${acknowledge}
+// # Contact
+// ### github 
+// If you have any questions rechout on https://github.com/${git}
+// ### E-mail
+// For more information bout this project e-main me on ${email}
+// `;
+// createNewFile(title, template);
+// });
+// function createNewFile(fileName, data){
+    
+//     fs.writeFile(`./${fileName.toLowerCase().split('').join('')}.md`, data, (error) =>{
+//         if(error){
+//             console.log(error)
+//         }
+//         console.log(" Congrats your README is generated")
+//     })
+// }
 
