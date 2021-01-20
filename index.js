@@ -79,7 +79,18 @@ inquirer.prompt([
       //providing list to  select any one of them.
       message : 'what licence did you use?',
       name : 'license',
-      choices: ['MIT', 'GPL v3', 'Apche 2.0', 'GNU', 'BSD 3-Clause','Boost 1.0', 'EPL 1.0','IPL 1.0', 'MPL 2.0', 'N/A'],
+      choices: [
+        '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)',
+        '[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)',
+        '[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)',
+        '[![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)',
+        '[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause',
+        '[![License](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)', 
+        '[![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)](https://opensource.org/licenses/EPL-1.0)',
+        '[![License: IPL 1.0](https://img.shields.io/badge/License-IPL%201.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)',
+        '[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)',
+        'N/A'
+    ],
       validate: (value) => { if (value){
           return true 
       }
@@ -134,7 +145,7 @@ inquirer.prompt([
     email
 
 }) => {
-const licenseSplit = license.split('').join('')
+
 const template = `# ${title}
 ## Table of Contents
 - [Title](#title)
@@ -148,10 +159,7 @@ const template = `# ${title}
 # title
 # ${title}
 ### Licence 
-
 ${license}
-[![License: ISC ](https://img.shields.io/badge/License-${licenseSplit}-blue.svg)](https://opensource.org/licenses/ISC)
-
 ### Summary 
 ${summary}
 ### Installation 
@@ -165,7 +173,7 @@ ${contributors}
 
 ### Acknowledge 
 ${acknowledge}
-### Contact
+# Contact
 ### github 
 https://github.com/${git}
 ### e-mail
