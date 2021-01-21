@@ -3,7 +3,7 @@
 const badge = function renderLicenseBadge(license) {
    splitLicense = license.split(' ').join('%20');
   if (license !== 'N/A') {
-    return `[GitHub license](https://img.shields.io/static/v1?label=License&message=`+ splitLicense +`&color=blue.svg)`
+    return `[![GitHub license](https://img.shields.io/static/v1?label=License&message=`+ splitLicense +`&color=blue.svg)]`
   }
   else{
     return "";
@@ -18,13 +18,13 @@ const licenselink = function renderLicenseLink(license) {
     return '';
   }
   else if (license =='GPL v3') {
-    return `[License](https://www.gnu.org/licenses/gpl-3.0)`
+    return `[${license}](https://www.gnu.org/licenses/gpl-3.0)`
   }
   else if (license == "boost 1.0") {
-    return `[License](https://www.boost.org/LICENSE_1_0.txt)`
+    return `[${license}](https://www.boost.org/LICENSE_1_0.txt)`
   }
   else {
-   return `[License](https://opensource.org/licenses/` + licenseSplit + `)`
+   return `[${license}](https://opensource.org/licenses/` + licenseSplit + `)`
   }
 }
 
@@ -50,8 +50,7 @@ function generateMarkdown(data) {
   # ${data.title}
   ### Licence 
   ${badge(data.license)}
-  ## License link
-  ${licenselink(data.license)}
+  ## Licensed under ${licenselink(data.license)}
   ### Summary
   ${data.summary}
   ### Installation 
