@@ -3,7 +3,7 @@
 const badge = function renderLicenseBadge(license) {
    splitLicense = license.split(' ').join('%20');
   if (license !== 'N/A') {
-    return `[![GitHub license](https://img.shields.io/static/v1?label=License&message=`+ splitLicense +`&color=blue.svg)]`
+    return `[GitHub license](https://img.shields.io/static/v1?label=License&message=`+ splitLicense +`&color=blue.svg)`
   }
   else{
     return "";
@@ -52,7 +52,7 @@ function generateMarkdown(data) {
   ${badge(data.license)}
   ## License link
   ${licenselink(data.license)}
-  ### Summary 
+  ### Summary
   ${data.summary}
   ### Installation 
   ${data.installation}
