@@ -3,7 +3,7 @@
 const badge = function renderLicenseBadge(license) {
    splitLicense = license.split(' ').join('%20');
   if (license !== 'N/A') {
-    return `[![GitHub license](https://img.shields.io/static/v1?label=License&message=`+ splitLicense +`&color=blue.svg]`
+    return `[![GitHub license](https://img.shields.io/static/v1?label=License&message=`+ splitLicense +`&color=blue.svg)]`
   }
   else{
     return "";
@@ -18,13 +18,13 @@ const licenselink = function renderLicenseLink(license) {
     return '';
   }
   else if (license =='GPL v3') {
-    return `[![License](https://www.gnu.org/licenses/gpl-3.0]`
+    return `[License](https://www.gnu.org/licenses/gpl-3.0)`
   }
   else if (license == "boost 1.0") {
-    return `[![License](https://www.boost.org/LICENSE_1_0.txt]`
+    return `[License](https://www.boost.org/LICENSE_1_0.txt)`
   }
   else {
-   return `[![License](https://opensource.org/licenses/` + licenseSplit + `]`
+   return `[License](https://opensource.org/licenses/` + licenseSplit + `)`
   }
 }
 
@@ -61,8 +61,7 @@ function generateMarkdown(data) {
   ### How to contribute to this project?
   ${data.contribute}
   ### Contributors 
-  https://github.com/${data.contributors}
-
+  ${data.contributors}
   ### Acknowledge 
   ${data.acknowledge}
   # Contact
@@ -70,7 +69,6 @@ function generateMarkdown(data) {
   If you have any questions reachout on \n https://github.com/${data.git}\n
   ### E-mail
   For more information bout this project e-main me on: \n${data.email}\n
-
 `;
 }
 

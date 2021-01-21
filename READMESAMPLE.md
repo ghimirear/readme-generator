@@ -12,9 +12,9 @@
   # Title
   # readme-generator
   ### Licence 
-  [![GitHub license](https://img.shields.io/static/v1?label=License&message=Apache%202.0&color=blue.svg]
+  [![GitHub license](https://img.shields.io/static/v1?label=License&message=Apache%202.0&color=blue.svg)]
   ## License link
-  [![License](https://opensource.org/licenses/Apache-2.0]
+  [License](https://opensource.org/licenses/Apache-2.0)
   ### Summary 
   Readne Generator is a simple app that will ask user some presets of questions and on the basis of user input it will generate a professional **README** file in a samll amount of time.
   ### Installation 
@@ -24,8 +24,7 @@
   ### How to contribute to this project?
   Find the bugs and then create an issue.
   ### Contributors 
-  https://github.com/No. This is my own project besides npm
-
+  This is my own project besides npm
   ### Acknowledge 
   Thank you everyone.
   # Contact
@@ -36,5 +35,4 @@
   ### E-mail
   For more information bout this project e-main me on: 
 ghimirearjun15@gmail.com
-
 
