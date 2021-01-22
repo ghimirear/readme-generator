@@ -15,17 +15,17 @@
   [![GitHub license](https://img.shields.io/static/v1?label=License&message=Apache%202.0&color=blue.svg)]
   ## Licensed under [Apache 2.0](https://opensource.org/licenses/Apache-2.0)
   ### Summary
-  simple app
+  this is a simple app to generate professional readme.
   ### Installation 
-  install npm and dependent packages
+  install node npm and dependent packages.
   ### How to use your application 
-  run index.js file in terminal.
+  run in external terminal that index.js file
   ### How to contribute to this project?
-  finding bugs and creating issues
+  find bugs and create an issue.
   ### Contributors 
   [ghimirear](https://github.com/ghimirear)
   ### Acknowledge 
-  thanks
+  thanks to everyone
   # Contact
   ### Questions 
   If you have any questions reachout on 
