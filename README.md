@@ -8,4 +8,4 @@ To install this program first install nodejs and then dependent packages like in
 - Staandard license badge and link to the licensing page.
 - Gives an place for to input contact.
 ### sample
-![screenshoot](readme23.jpg)
+![screenshoot](readme23.JPG)
