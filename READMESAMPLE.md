@@ -15,17 +15,17 @@
   [![GitHub license](https://img.shields.io/static/v1?label=License&message=Apache%202.0&color=blue.svg)]
   ## Licensed under [Apache 2.0](https://opensource.org/licenses/Apache-2.0)
   ### Summary
-  Readme Generator is a simple app that will ask user some presets of questions and on the basis of user input it will generate a professional **README** file in a samll amount of time.
+  simple app
   ### Installation 
-  Install as like npm packages.
+  install npm and dependent packages
   ### How to use your application 
-   First install node and then npm package inquirer and then run index.js file in external terminal.
+  run index.js file in terminal.
   ### How to contribute to this project?
-  Find the bugs and then create an issue.
+  finding bugs and creating issues
   ### Contributors 
-  This is my own project besides npm packages.
+  [ghimirear](https://github.com/ghimirear)
   ### Acknowledge 
-   Thank you everyone.
+  thanks
   # Contact
   ### Questions 
   If you have any questions reachout on 

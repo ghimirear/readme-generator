@@ -1,3 +1,4 @@
+
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 const badge = function renderLicenseBadge(license) {
@@ -10,8 +11,8 @@ const badge = function renderLicenseBadge(license) {
   }
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+// // TODO: Create a function that returns the license link
+// // If there is no license, return an empty string
 const licenselink = function renderLicenseLink(license) {
   licenseSplit = license.split(" ").join('-');
   if (license == "N/A") {
@@ -32,6 +33,25 @@ const licenselink = function renderLicenseLink(license) {
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {}
+
+// function to generate contributors numbers and their github rofile
+const contributorLink = function (username){
+  if (username === '' || username ==='no') {
+    return
+  }
+  else{
+  console.log(username);
+  var contibutor = [];
+ contibutor.push(username.split(' '));
+ console.log(contibutor[0]);
+  for (var i = 0; i <= contibutor[0].length; i++) {
+  var links = [];
+ var link = `[${contibutor[0][i]}](https://github.com/`+ contibutor[0][i] +`)`
+  links.push(link)
+   return links
+  }
+}
+}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
@@ -60,7 +80,7 @@ function generateMarkdown(data) {
   ### How to contribute to this project?
   ${data.contribute}
   ### Contributors 
-  ${data.contributors}
+  ${contributorLink(data.username)}
   ### Acknowledge 
   ${data.acknowledge}
   # Contact
@@ -71,4 +91,4 @@ function generateMarkdown(data) {
 `;
 }
 
-module.exports = generateMarkdown;
+    module.exports = generateMarkdown

@@ -66,15 +66,15 @@ const  questions = [
     }}  
     },
     {
-      type: 'input',
-      message : 'any contributors to your project? please provide github username of contributor',
-      name : 'contributors',
+      type: 'linput',
+      name : 'username',
+      message : 'any contibutors? then provide github username and press sapce bar and another usernaame and finally press enter(only username nothing else if no then typr "no")',
       validate: (value) => { if (value){
-          return true 
-      }
-    else{
-        return 'any contributos to your project?'
-    }}  
+              return true 
+          }
+        else{
+            return 'provide username if any if not ten type no'
+        }}
     },
     {
       type: 'list',
