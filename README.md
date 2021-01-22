@@ -7,5 +7,7 @@ To install this program first install nodejs and then dependent packages like in
 - It allows to put contributor(s).
 - Staandard license badge and link to the licensing page.
 - Gives an place for to input contact.
+## Link to repo
+[Repo](https://github.com/ghimirear/readme-generator)
 ### sample
 ![screenshoot](readme23.JPG)
