@@ -8,8 +8,8 @@ To install this program first install nodejs and then dependent packages like in
 - Staandard license badge and link to the licensing page.
 - Gives an place for to input contact.
 ## Link to repo and video
-[Repo](https://github.com/ghimirear/readme-generator)
-[Link-to-video](https://drive.google.com/file/d/1E_YFUGl8nRaIttJI-bGYSzhU0LrJluj6/view)
+- [Repo](https://github.com/ghimirear/readme-generator)
+- [Link-to-video](https://drive.google.com/file/d/1E_YFUGl8nRaIttJI-bGYSzhU0LrJluj6/view)
 ### sample
 ![screenshoot](readme23.JPG)
 
