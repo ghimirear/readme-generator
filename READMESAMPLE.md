@@ -12,20 +12,19 @@
   # Title
   # readme-generator
   ### Licence 
-  [![GitHub license](https://img.shields.io/static/v1?label=License&message=Apache%202.0&color=blue.svg)]
-  ## Licensed under [Apache 2.0](https://opensource.org/licenses/Apache-2.0)
+  [![GitHub license](https://img.shields.io/static/v1?label=License&message=BSD%203-clause&color=blue.svg)] [BSD 3-clause](https://opensource.org/licenses/BSD-3-clause)
   ### Summary
-  this is a simple app to generate professional readme.
+  This is a simple app to generate markdown file on the basis of standard questions and corresponding user response. 
   ### Installation 
-  install node npm and dependent packages.
+  install npm clone the repo to your computer.
   ### How to use your application 
-  run in external terminal that index.js file
+  simply run the index.js file in terminal
   ### How to contribute to this project?
-  find bugs and create an issue.
+  find bugs and create an issues.
   ### Contributors 
-  [ghimirear](https://github.com/ghimirear)
+  undefined
   ### Acknowledge 
-  thanks to everyone
+  Thank you everyone for helping me out.
   # Contact
   ### Questions 
   If you have any questions reachout on 

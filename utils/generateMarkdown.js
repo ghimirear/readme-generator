@@ -40,16 +40,11 @@ const contributorLink = function (username){
     return
   }
   else{
-  console.log(username);
-  var contibutor = [];
- contibutor.push(username.split(' '));
- console.log(contibutor[0]);
-  for (var i = 0; i <= contibutor[0].length; i++) {
-  var links = [];
- var link = `[${contibutor[0][i]}](https://github.com/`+ contibutor[0][i] +`)`
-  links.push(link)
-   return links
-  }
+  var usernames = username.split(' ')
+ for (var i = 0; i < usernames.length; i++) {
+   var link = `[${usernames[i]}](https://github.com/`+ usernames[i] +`)`
+    console.log(link);
+    }
 }
 }
 
@@ -69,8 +64,7 @@ function generateMarkdown(data) {
   # Title
   # ${data.title}
   ### Licence 
-  ${badge(data.license)}
-  ## Licensed under ${licenselink(data.license)}
+  ${badge(data.license)} ${licenselink(data.license)}
   ### Summary
   ${data.summary}
   ### Installation 
