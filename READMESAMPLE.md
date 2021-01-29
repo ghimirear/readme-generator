@@ -1,5 +1,5 @@
-# readme-generator
-  https://github.com/ghimirear/readme-generator
+# samp
+  https://github.com/samp/samp
   ## Table of Contents:
   - [Title](#Title)
   - [Summary](#Summary)
@@ -10,27 +10,29 @@
   - [Licence](#Licence)
   - [Contact](#Contact)
   # Title
-  # readme-generator
+  # samp
   ### Licence 
-  [![GitHub license](https://img.shields.io/static/v1?label=License&message=BSD%203-clause&color=blue.svg)] [BSD 3-clause](https://opensource.org/licenses/BSD-3-clause)
+  ![GitHub license](https://img.shields.io/static/v1?label=License&message=Apache%202.0&color=blue.svg) [Apache 2.0](https://opensource.org/licenses/Apache-2.0)
   ### Summary
-  This is a simple app to generate markdown file on the basis of standard questions and corresponding user response. 
+  samp
   ### Installation 
-  install npm clone the repo to your computer.
+  samp
   ### How to use your application 
-  simply run the index.js file in terminal
+  samp
   ### How to contribute to this project?
-  find bugs and create an issues.
+  samp
   ### Contributors 
   undefined
   ### Acknowledge 
-  Thank you everyone for helping me out.
+  samp
+  ## Test
+  samp
   # Contact
   ### Questions 
   If you have any questions reachout on 
- https://github.com/ghimirear
+ https://github.com/samp
 
   ### E-mail
   For more information bout this project e-main me on: 
-ghimirearjun15@gmail.com
+samp
 

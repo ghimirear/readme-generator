@@ -4,7 +4,7 @@
 const badge = function renderLicenseBadge(license) {
    splitLicense = license.split(' ').join('%20');
   if (license !== 'N/A') {
-    return `[![GitHub license](https://img.shields.io/static/v1?label=License&message=`+ splitLicense +`&color=blue.svg)]`
+    return `![GitHub license](https://img.shields.io/static/v1?label=License&message=`+ splitLicense +`&color=blue.svg)`
   }
   else{
     return "";
@@ -29,10 +29,6 @@ const licenselink = function renderLicenseLink(license) {
   }
 }
 
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {}
 
 // function to generate contributors numbers and their github rofile
 const contributorLink = function (username){
@@ -77,6 +73,8 @@ function generateMarkdown(data) {
   ${contributorLink(data.username)}
   ### Acknowledge 
   ${data.acknowledge}
+  ## Test
+  ${data.test}
   # Contact
   ### Questions 
   If you have any questions reachout on \n https://github.com/${data.git}\n

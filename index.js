@@ -123,6 +123,17 @@ const  questions = [
         return 'please provide your github user name to continue'
     }}  
     },
+    {
+      type: 'input',
+      message : 'any test to your application?',
+      name : 'test',
+      validate: (value) => { if (value){
+          return true 
+      }
+    else{
+        return 'if there is no test then simply type no.'
+    }}  
+    },
 
 ]
 
